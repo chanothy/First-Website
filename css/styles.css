@@ -1,0 +1,372 @@
+body {
+  background-color: #E6EEF5;  
+}
+
+/* NAVIGATION */
+nav {
+  position: fixed;
+  top: 0;  
+  right: 0;
+  z-index: 100;
+  color: #3e3be1; 
+  display: flex;
+  flex-direction: row;
+  /* right: 0; */
+  /* background-color: blue; */
+  width: 5%;
+  justify-content: flex-end;
+  font-size: 35px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav div {
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  padding: .2em;
+  margin: .5em .5em 0 0;
+}
+
+nav li {
+  list-style-type: none;
+  display: block;
+  display: flex;
+  flex-direction: row-reverse;
+  font-family: "Hammersmith One";
+}
+
+.item {
+  /* display: none; */
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity .3s linear;
+} 
+
+.item a {
+  color: white;
+  font-size: 36px;
+  text-decoration: none;
+  background-color: #3e3be1;
+  padding: 0 .5em;
+  margin: 0;
+  display: block;
+}
+
+.item a:hover {
+  background-color: gray;
+}
+
+.show {
+  visibility: visible;
+  /* display: block; */
+  opacity: 1;
+}
+
+/* Logo */
+a:hover {
+  color: #3e3be1;
+}
+.logo {
+  font-weight: bold;
+  font-size: 45px;
+  font-family: "Hammersmith One";
+  text-decoration: none;
+}
+
+.logo span {
+  font-family: "Fugaz One";
+}
+
+.logo li {
+  padding: .3em 1em .3em 1em;
+}
+
+.myButton {
+  background: #3e3be1;
+  color: white;
+  padding: 1em 1.0rem;
+  font-size: 16px;
+  border: 1px solid #3867d6;
+  font-family: "Roboto";
+}
+
+.myButton span {
+  font-weight: lighter;
+}
+
+.logo1 {
+  font-family: "Hammersmith One";
+}
+
+.centering {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  z-index: 0;
+}
+
+/* Text over image */
+.imagecontainer {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.toggle {
+  visibility: visible;
+}
+
+
+.text-block {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  top: 50%;
+  right: 50%;
+  font-family: "Bebas Neue";
+  font-size: 40px;
+  /* text-shadow:  */
+  padding: 10px .5em 0 .5em;
+  background-color: #3e3be1;
+  margin: 0;
+  color: white;
+}
+
+.text-block h1 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Content */
+.info {
+  display: flex;
+  justify-content: center;
+}
+
+.myPara {
+  font-family: "Roboto";
+  font-size: 20px;
+  line-height: 2em;
+  padding: 0;
+  margin-top: .5em;
+  margin-bottom: 1em;
+}
+
+.naviga {
+  position: fixed;
+  z-index: 1000;
+  background-color: white;
+  width: 100%;
+}
+.myHead{
+  font-family: "Hammersmith One";
+  font-size: 60px;
+  margin-bottom: .5em;
+  /* margin-top: 1em; */
+  color: black;
+}
+
+p:first-child:first-letter {
+  color: #e67e22;
+  float: left;
+  font-family: "Roboto";
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 15px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+main {
+
+}
+
+section {
+  
+}
+
+article {
+  width: 50%;
+  background-color: white;
+  padding: 0 2em 2em 2em;
+  margin: 1em;;
+}
+
+/* Buttons */
+.buttonContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2em;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.button{
+  width: 200px;
+  border-radius: 50%;
+}
+
+.buttonContainer figure {
+  text-align: center;
+  font-family: "Hammersmith One";
+  font-size: 20px;
+}
+
+.buttonContainer figcaption {
+  padding-top: 1em;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px black solid;
+  padding: 6em;
+  margin-top: 2em;
+}
+
+/* Sweep-to-top */
+.hvr-sweep-to-top {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-top:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: navy;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-top:hover, .hvr-sweep-to-top:focus, .hvr-sweep-to-top:active {
+  color: white;
+}
+.hvr-sweep-to-top:hover:before, .hvr-sweep-to-top:focus:before, .hvr-sweep-to-top:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+@media (min-width: 0px) { 
+  ul { 
+    flex-flow: row wrap;
+    gap: .5rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 900px) {
+  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  
+}
+
+
+/* MEDIA QUERIES FROM LARGEST TO SMALLEST */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  ul {
+    flex-direction: column;
+    position: relative;
+  }
+  .toggle {
+    visibility: visible;
+  }
+  .logo {
+    font-size: 25px;
+    padding: 1em 0em 1em .1em;
+    list-style-type: none;
+    margin: 0;
+  }
+
+  .toggle {
+    display: flex;
+  }
+  .myButton {
+    font-size: 10px;
+    margin: 0;
+  }
+  .text-block {
+    font-size: 15px;
+  }  
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .text-block {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    width: 80%;
+    background-color: #3e3be1;
+    left: 40px;
+  }  
+  
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .text-block {
+    font-size: 30px;
+  }  
+}
+
+/* Extra large devices (large desktops)

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FishFlow - Learn to Fish</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- Fonts -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fugaz+One&family=Hammersmith+One&family=Roboto:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+</head>
+
+<body>
+
+    <div class="naviga">
+        <div class="centering">
+        <a class="logo" href="#">
+            <li>
+                Fish<span>Flow </span>
+            </li>
+        </a>
+        <!-- <a href="#howto">top</a> -->
+        <a href="#howto"><li class="hvr-sweep-to-top myButton"> Get Fishing - Learn Here </li></a>
+        </div>
+
+        
+        <nav>
+            <ul>
+                <li class="toggle"><i class="fa-solid fa-bars fa-lg"></i></li>
+                <li class="item"><a href="project.html">Home</a></li>
+                <li class="item"><a href="fishfacts.html">Fish Facts</a></li>
+                <li class="item"><a href="about.html">About Us</a></li>
+                <li class="item"><a href="contact.html">Contact</a></li>
+            </ul>    
+        </nav>
+    </div>
+
+
+    <main>
+        <div class="imagecontainer">
+            <img src="images/peoplefishing.jpg" alt="People Fishing" style="width:100%;">
+            <div class="text-block">
+            <h1>Why Start Fishing?</h1>
+            </div>
+        </div> 
+
+        <div class="info">
+            <article>
+            <p class="myPara">Fishing gives you the opportunity to form special bonds with family and friends. Adventures on the water bring people together in a number of ways. When you share the thrill of a first catch or the stunning scenery of a new waterway, you form bonds with your fishing buddies that can last a lifetime.</p>
+            <p class="myPara">Fishing contributes to the conservation of our aquatic resources through fishing license purchases that go towards research and waterway enhancement projects. The more you learn about fishing and conservation; the more mindful you are of proper catch and release, protecting our eco-systems, and respecting other anglers.</p>
+            </article>
+        </div>
+        <section id="howto" class="buttonSection">
+            <div class="buttonContainer">
+            <a href="howtocast.html">
+            <figure class="hvr-grow" >
+                <img class="button hvr-ripple-out" src="images/fishingrod.jpg" alt="How to Cast">
+                <figcaption>How to Cast</figcaption>
+            </figure>
+            </a>
+            <figure class="hvr-grow" >
+                <img class="button" src="images/bait.jpg" alt="What Bait to Use">
+                <figcaption>What Bait to Use</figcaption>
+            </figure>
+            <figure class="hvr-grow" >
+                <img class="button" src="images/hook.jpg" alt="How to Hook a Fish">
+                <figcaption>How to Hook a Fish</figcaption>
+            </figure>
+            <figure class="hvr-grow" >
+                <img class="button" src="images/fisher.jpg" alt="Where to Fish">
+                <figcaption>Where to Fish</figcaption>
+            </figure>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer">
+            Made By Tim
+            </div>
+        </footer>
+
+    </main>
+
+
+
+
+                 
+    <!-- JavaScript -->
+    <script>
+        // once the dropdown is toggled, add the class 'show' to each menu item to reveal it
+        // if clicked again, toggle this effect by removing the 'show' class
+        function toggleDropdown() {
+            document.querySelectorAll('.item').forEach(item => item.classList.toggle('show'));
+        }
+        // On the element with the class toggle, wait for it to be clicked, then toggle the dropdown
+        document.querySelector('.toggle').addEventListener('click', toggleDropdown);
+    </script>
+</body>
+</html>
