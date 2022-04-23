@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Nav with JS</title>
+    <title>FishFlow - Learn to Fish</title>
     <!-- resets browser defaults -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <!-- font awesome icons -->
     <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
     <!-- custom styles -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/tutorial.css">
     <!-- Fonts -->
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fugaz+One&family=Hammersmith+One&family=Roboto:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Quattrocento" rel="stylesheet">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
@@ -27,12 +29,11 @@
 
     <div class="naviga">
         <div class="centering">
-        <a class="logo" href="#">
+        <a class="logo" href="project.html">
             <li>
-                <span class="firstWordFont"> Fish </span> Flow
-            </li>   
+                Fish<span>Flow </span>
+            </li>
         </a>
-        <a href="#"><li class="hvr-sweep-to-top myButton"> Get Fishing - Learn Here </li>
         </div>
 
         
@@ -47,4 +48,40 @@
         </nav>
     </div>
 
+    <section class="sec">
+        <h1 class="title"> How to Cast your Fishing Rod </h1>
+        <div class = "container">
+            <div class="flex">
+            <h1 class="number"> 1 </h1>
+            <p class="myPara">Hold the rod at about waist level, grasping it so that the reel is below the rod, and the stem of the reel feels natural between your fingers. The bait or lure should be hanging 10 to 18 inches below the end of the rod.   </p>
+            </div>
+            <div class="flex">
+                <h1 class="number">2</h1>
+                <p class="myPara">Hook the line with your forefinger, and open the bail, continuing to hold the line.</p>
+            </div>
+            <div class="flex">
+                <h1 class="number">3</h1>
+                <p class="myPara">Pull the rod tip back so the tip sweeps over your dominant shoulder, and then bring it forward swiftly pointing the rod tip at your target. As the rod comes forward of your shoulder release the line with your finger so the weight of the lure pulls line off the reel.</p>
+            </div>
+            <div class="flex">
+                <h1 class="number">4</h1>
+                <p class="myPara">Close the bail with your hand, and you’re ready to reel using a retrieve technique.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- JavaScript -->
+    <script>
+        // once the dropdown is toggled, add the class 'show' to each menu item to reveal it
+        // if clicked again, toggle this effect by removing the 'show' class
+        function toggleDropdown() {
+            document.querySelectorAll('.item').forEach(item => item.classList.toggle('show'));
+        }
+        // On the element with the class toggle, wait for it to be clicked, then toggle the dropdown
+        document.querySelector('.toggle').addEventListener('click', toggleDropdown);
+    </script>
+
 </body>
+
+</html>

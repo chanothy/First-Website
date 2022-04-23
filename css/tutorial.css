@@ -1,0 +1,17 @@
+.sec {
+    padding-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 60px;
+    font-family: "Oswald";
+}
+
+.number {
+    padding: 1em;
+    margin-right: 1em;
+    background-color: #ff6348;
+}

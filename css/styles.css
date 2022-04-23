@@ -1,5 +1,5 @@
 body {
-  background-color: #E6EEF5;  
+  background-color: #f1f2f6;  
 }
 
 /* NAVIGATION */
@@ -8,7 +8,7 @@ nav {
   top: 0;  
   right: 0;
   z-index: 100;
-  color: #3e3be1; 
+  color: #5352ed; 
   display: flex;
   flex-direction: row;
   /* right: 0; */
@@ -30,6 +30,8 @@ nav div {
 nav ul {
   display: flex;
   flex-direction: column;
+  /* flex-direction: row-reverse; */
+  /* display: ; */
   padding: .2em;
   margin: .5em .5em 0 0;
 }
@@ -37,9 +39,9 @@ nav ul {
 nav li {
   list-style-type: none;
   display: block;
-  display: flex;
-  flex-direction: row-reverse;
-  font-family: "Hammersmith One";
+  /* display: flex; */
+  /* flex-direction: row-reverse; */
+  font-family: "Oswald";
 }
 
 .item {
@@ -53,14 +55,14 @@ nav li {
   color: white;
   font-size: 36px;
   text-decoration: none;
-  background-color: #3e3be1;
-  padding: 0 .5em;
+  background-color: #5352ed;
+  padding: .2em;  
   margin: 0;
   display: block;
 }
 
 .item a:hover {
-  background-color: gray;
+  background-color: white;
 }
 
 .show {
@@ -71,17 +73,22 @@ nav li {
 
 /* Logo */
 a:hover {
-  color: #3e3be1;
+  color: #ff6348;
 }
 .logo {
   font-weight: bold;
   font-size: 45px;
-  font-family: "Hammersmith One";
+  font-family: "Oswald";
   text-decoration: none;
+  color: #5352ed
+}
+
+.logo a :visited {
+  color: #ff7f50;
 }
 
 .logo span {
-  font-family: "Fugaz One";
+  font-family: "Hammersmith One";
 }
 
 .logo li {
@@ -89,12 +96,13 @@ a:hover {
 }
 
 .myButton {
-  background: #3e3be1;
+  background: #ff6348 ;
   color: white;
   padding: 1em 1.0rem;
   font-size: 16px;
-  border: 1px solid #3867d6;
-  font-family: "Roboto";
+  font-weight: bold;
+  border: 1px solid #ff6348;
+  font-family: "Oswald";
 }
 
 .myButton span {
@@ -102,7 +110,7 @@ a:hover {
 }
 
 .logo1 {
-  font-family: "Hammersmith One";
+  font-family: "Oswald";
 }
 
 .centering {
@@ -123,6 +131,8 @@ a:hover {
 
 .toggle {
   visibility: visible;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 
@@ -132,12 +142,12 @@ a:hover {
   justify-content: center;
   align-items: flex-start;
   top: 50%;
-  right: 50%;
+  /* right: 50%; */
   font-family: "Bebas Neue";
   font-size: 40px;
   /* text-shadow:  */
   padding: 10px .5em 0 .5em;
-  background-color: #3e3be1;
+  background-color: #ff6348;
   margin: 0;
   color: white;
 }
@@ -148,13 +158,32 @@ a:hover {
 }
 
 /* Content */
-.info {
+h2 {
+  font-family: "Oswald";
+}
+section h1 {
+  font-family: "Oswald";
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  max-width: 800px;    
+  padding: 1em 0em 1em 0em;
+  margin: 1em;
+  border-top: 1px #ff6348 solid;
+  border-bottom: 1px #ff6348 solid;
+}
+.sec {
   display: flex;
   justify-content: center;
 }
 
 .myPara {
-  font-family: "Roboto";
+  font-family: "Quattrocento";
   font-size: 20px;
   line-height: 2em;
   padding: 0;
@@ -176,16 +205,18 @@ a:hover {
   color: black;
 }
 
-p:first-child:first-letter {
+/* p:first-child:first-letter {
   color: #e67e22;
   float: left;
-  font-family: "Roboto";
+  font-family: "Quicksand";
   font-size: 75px;
   line-height: 60px;
   padding-top: 15px;
   padding-right: 8px;
   padding-left: 3px;
-}
+} */
+
+
 
 main {
 
@@ -196,7 +227,7 @@ section {
 }
 
 article {
-  width: 50%;
+  max-width: 50%;
   background-color: white;
   padding: 0 2em 2em 2em;
   margin: 1em;;
@@ -213,7 +244,8 @@ article {
 
 .button{
   width: 200px;
-  border-radius: 50%;
+  border-radius: 40%;
+  border: 3px #ff6348 solid;
 }
 
 .buttonContainer figure {
@@ -228,9 +260,12 @@ article {
 
 /* Footer */
 .footer {
-  border-top: 1px black solid;
+  border-top: 1px #ff6348 solid;
+  background-color: #5352ed;
   padding: 6em;
   margin-top: 2em;
+  font-family: "Oswald";
+  color: white;
 }
 
 /* Sweep-to-top */
@@ -254,7 +289,7 @@ article {
   left: 0;
   right: 0;
   bottom: 0;
-  background: navy;
+  background: #ff7f50;
   -webkit-transform: scaleY(0);
   transform: scaleY(0);
   -webkit-transform-origin: 50% 100%;
@@ -354,12 +389,15 @@ article {
   .text-block {
     display: flex;
     justify-content: center;
-    font-size: 15px;
-    width: 80%;
-    background-color: #3e3be1;
-    left: 40px;
+    /* width: %; */
+    /* font-size: 20px; */
+    /* left: 30px; */
+    background-color: #5352ed;
   }  
-  
+  .text-block h1 {
+    font-size: 50px;
+    text-align: center;
+  }
 }
 
 /* Large devices (desktops, less than 1200px) */
