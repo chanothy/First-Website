@@ -1,0 +1,24 @@
+.bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bioBox {
+    display: flex;
+    align-items: center;
+    background-color: #ced6e0;
+    padding: 1em;
+    margin-bottom: 2em;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 60px;
+    border-bottom: 1px solid #ff6348;
+  }
+
+#map {
+    height: 500px;
+    /* margin: 2em; */
+}

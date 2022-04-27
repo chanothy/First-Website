@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FishFlow - Learn to Fish</title>
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/tutorial.css">
+    <link rel="stylesheet" type="text/css" href="css/aboutme.css">
+
+    <!-- Fonts -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fugaz+One&family=Hammersmith+One&family=Roboto:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Quattrocento" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+</head>
+
+<body>
+
+    <div class="naviga">
+        <div class="centering">
+        <a class="logo" href="project.html">
+            <li>
+                Fish<span>Flow </span>
+            </li>
+        </a>
+        <a href="project.html"><li class="hvr-sweep-to-top myButton"> Home </li></a>
+        </div>
+
+        
+        <nav>
+            <ul>
+                <li class="toggle"><i class="fa-solid fa-bars fa-lg"></i></li>
+                <li class="item"><a href="project.html">Home</a></li>
+                <li class="item"><a href="about.html">About Me</a></li>
+            </ul>    
+        </nav>
+    </div>
+
+    <section class="sec">
+        <h1 class="title"> About Me </h1>
+        <div class = "container">
+            <div class="bioBox">
+            <p class="myPara"> Hi, I'm <span class="name">Tim</span>. I'm no expert at fishing, but I know the basics. </p>
+            <img src="images/me.jpg" alt="me" width="100%">
+            </div>
+             <div class="instructionContainer">
+                <h1> Who am I? </h1>
+                <p class="myPara">I am a college student at Indiana University Bloomington. I'm currently pursuing my bachelors in computer science. My favorite coding language is Java.</p>
+                <h1> Where have I fished? </h1>
+                <p class="myPara">My family's prior military background has allowed to to travel all over the US. I have fished in every state that I have lived in. This includes the Roubidoux Creek, Lake of the Ozarks, the James River Fishing Pier, and the Salimonie Lake to name a few. If you don't where these places are, take a look at the map below.</p>
+                </div>
+
+
+                
+                <div id="map"></div>
+
+    
+    </section>
+
+    <footer>
+        <div class="footer">
+        Made By Tim
+        </div>
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script>
+        // once the dropdown is toggled, add the class 'show' to each menu item to reveal it
+        // if clicked again, toggle this effect by removing the 'show' class
+        function toggleDropdown() {
+            document.querySelectorAll('.item').forEach(item => item.classList.toggle('show'));
+        }
+        // On the element with the class toggle, wait for it to be clicked, then toggle the dropdown
+        document.querySelector('.toggle').addEventListener('click', toggleDropdown);
+    </script>
+
+    <!-- Leaflet: Either ok - download the resources or use the CDN -->
+		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+                <!-- ALSO OK to put activation script into a LEAFLET.JS or MAIN.JS file in JS folder, then link with script tag  -->
+             <script>
+                 var map = L.map('map').setView([39.172359, -86.523567], 13);
+                 
+                 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+                     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                     maxZoom: 18,
+                     id: 'mapbox/streets-v11',
+                     tileSize: 512,
+                     zoomOffset: -1,
+                     accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw'
+                 }).addTo(map);	
+                 
+                 var marker = L.marker([40.80378593676606, -85.664789334416]).addTo(map);
+                 marker.bindPopup("Salimonie Dam, <b>Indiana</b>");
+                 var marker = L.marker([37.830246569870106, -92.20610990793458]).addTo(map);
+                 marker.bindPopup("Roubidoux Creek, <b>Missouri</b>");
+                 
+             </script>
+
+</body>
+
+</html>

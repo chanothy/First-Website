@@ -33,7 +33,7 @@ nav ul {
   /* flex-direction: row-reverse; */
   /* display: ; */
   padding: .2em;
-  margin: .5em .5em 0 0;
+  margin: .5em 1em 0 0;
 }
 
 nav li {
@@ -52,17 +52,20 @@ nav li {
 } 
 
 .item a {
+  text-align: center;
   color: white;
   font-size: 36px;
   text-decoration: none;
   background-color: #5352ed;
-  padding: .2em;  
-  margin: 0;
+  border: #ff6348 solid 1px;
+  width: 200px;
+  padding: .2em;
+  margin: 0 auto;
   display: block;
 }
 
 .item a:hover {
-  background-color: white;
+  background-color: whitesmoke;
 }
 
 .show {
@@ -70,6 +73,7 @@ nav li {
   /* display: block; */
   opacity: 1;
 }
+
 
 /* Logo */
 a:hover {
@@ -135,6 +139,10 @@ a:hover {
   flex-direction: row-reverse;
 }
 
+.toggle :hover {
+  color: #ff6348
+}
+
 
 .text-block {
   position: absolute;
@@ -182,13 +190,21 @@ section h1 {
   justify-content: center;
 }
 
+.whyList {
+  background-color: #ced6e0;
+  padding: .5em;
+  color: black;
+  margin-top: 1em;
+  margin-bottom: .5em;
+}
+
 .myPara {
   font-family: "Quattrocento";
   font-size: 20px;
   line-height: 2em;
   padding: 0;
-  margin-top: .5em;
-  margin-bottom: 1em;
+  margin-top: 0em;
+  margin-bottom: 3em;
 }
 
 .naviga {
@@ -232,6 +248,8 @@ article {
   padding: 0 2em 2em 2em;
   margin: 1em;;
 }
+
+
 
 /* Buttons */
 .buttonContainer {
@@ -382,6 +400,12 @@ article {
   .text-block {
     font-size: 15px;
   }  
+  .sec img {
+    display: none;
+}
+.sec figure {
+  display: none;
+}
 }
 
 /* Medium devices (tablets, less than 992px) */
