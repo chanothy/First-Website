@@ -280,10 +280,23 @@ article {
 .footer {
   border-top: 1px #ff6348 solid;
   background-color: #5352ed;
-  padding: 6em;
+  padding: 2em;
   margin-top: 2em;
   font-family: "Oswald";
   color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer a {
+  padding: 1em;
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 /* Sweep-to-top */

@@ -48,7 +48,11 @@
             <ul>
                 <li class="toggle"><i class="fa-solid fa-bars fa-lg"></i></li>
                 <li class="item"><a href="project.html">Home</a></li>
-                <li class="item"><a href="about.html">About Me</a></li>
+                <li class="item"><a href="about.html">About Us</a></li>
+                <li class="item"><a href="howtocast.html">How to Cast</a></li>
+                <li class="item"><a href="whatbait.html">What Lure to Use</a></li>
+                <li class="item"><a href="howtohook.html">How to Hook a Fish</a></li>
+                <li class="item"><a href="where.html">Where to Fish</a></li>
             </ul>    
         </nav>
     </div>
@@ -57,7 +61,7 @@
         <h1 class="title"> About Me </h1>
         <div class = "container">
             <div class="bioBox">
-            <p class="myPara"> Hi, I'm <span class="name">Tim</span>. I'm no expert at fishing, but I know the basics. </p>
+            <p class="myPara"> Hi, I'm <span class="name">Tim Chan</span>. I'm no expert at fishing, but I know the basics. </p>
             <img src="images/me.jpg" alt="me" width="100%">
             </div>
              <div class="instructionContainer">
@@ -76,7 +80,10 @@
 
     <footer>
         <div class="footer">
-        Made By Tim
+        <p>Created by Timothy Chan</p>
+        <a href="project.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="https://luddy.indiana.edu/">Luddy School of Informatics, Computing, and Technology, 919 E 10th St, Bloomington, IN 47408</a>
         </div>
     </footer>
 
@@ -98,7 +105,7 @@
         crossorigin=""></script>
                 <!-- ALSO OK to put activation script into a LEAFLET.JS or MAIN.JS file in JS folder, then link with script tag  -->
              <script>
-                 var map = L.map('map').setView([39.172359, -86.523567], 13);
+                 var map = L.map('map').setView([39.016139536885206, -89.29196739051551], 4);
                  
                  L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
                      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -113,6 +120,10 @@
                  marker.bindPopup("Salimonie Dam, <b>Indiana</b>");
                  var marker = L.marker([37.830246569870106, -92.20610990793458]).addTo(map);
                  marker.bindPopup("Roubidoux Creek, <b>Missouri</b>");
+                 var marker = L.marker([37.01340884835966, -76.45640812946554]).addTo(map);
+                 marker.bindPopup("James River Fishing Pier, <b>Virginia</b>");
+                 var marker = L.marker([38.13860521024138, -92.81015484758139]).addTo(map);
+                 marker.bindPopup("Lake of the Ozarks, <b>Missouri</b>");
                  
              </script>
 

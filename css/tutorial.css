@@ -44,6 +44,26 @@
     margin-top: 3em;
 }
 
+.infoImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4em;
+}
+
+.infoImg div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+.infoImg figcaption {
+    padding: 1em;
+    font-family: "Oswald";
+    background-color: #ced6e0;
+    margin: 1em;
+}
 .container {
     margin-bottom: 3em;
 }
